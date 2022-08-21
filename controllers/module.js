@@ -78,6 +78,54 @@ var investmentQuestions = [
     ],
     correctAnswer: "Mutual Funds"
   }, 
+  {
+    type: 1,
+    prompt: "Investing is not just for the Warren Buffet's of the world. Regardless of how long you're investing for, diversifying your portfolio is an absolute must. One thing is also for sure — if you invest for a long time period you benefit from the power of compounding. This is the process by which the money you make earns interest on itself over time.",
+    question: "Given the power of compounding, and it's snowball effect on savings, when would be the best time to start investing?",
+    choices: [
+      "When you get a higher paying job", 
+      "Once you pay off student debt", 
+      "Now. As soon as possible!", 
+      "Next month"
+    ],
+    correctAnswer: "Now. As soon as possible!"
+  }, 
+  {
+    type: 1,
+    prompt: "Both first-time and seasoned investors will find the perfect combination of features and enjoy commission-free trading with Wealthsimple Trade. Investors who don't want to make trades can take a risk-free survey and get a customized portfolio with Wealthsimple Invest.",
+    question: "Given the low-risk, high-reward of investing with Wealthsimple, who should invest for their future?",
+    choices: [
+      "The wealthy", 
+      "People who have more disposable income", 
+      "Anyone who wins or inherits large a fortune", 
+      "Everyone"
+    ],
+    correctAnswer: "Everyone"
+  }, 
+  {
+    type: 1,
+    prompt: "Warren Buffet said: The goal of the non-professional should not be to pick winners — neither he nor his 'helpers' can do that — but should rather be to own a cross-section of businesses that in aggregate are bound to do well.",
+    question: "The best way to follow Mr. Buffett's advise is to diversify your investment portfolio. Which is the most diverse portfolio?",
+    choices: [
+      "Residential and commercial real estate", 
+      "Stocks, bonds, collectible toys", 
+      "Stocks, bonds, real estate", 
+      "Bitcoin, Gamestop stocks, Bed Bath & Beyond stocks"
+    ],
+    correctAnswer: "Stocks, bonds, real estate"
+  }, 
+  {
+    type: 0,
+    prompt: "If picking stocks sounds like a time-intensive challenge, that's because it absolutely is. Thankfully, there are investment platforms that allow you to invest on autopilot without knowing anything about investing. Stock picking notoriously risky. You should treat any stock picking you do like betting and only invest money you can afford to lose.",
+    question: "One way to invest money wisely is to start investing with _____ today.",
+    choices: [
+      "Lotto Max", 
+      "Casino Rama", 
+      "Wealthsimple", 
+      "WallStreetBets"
+    ],
+    correctAnswer: "Wealthsimple"
+  }
 ]
 
 exports.getQuestions = async (req, res, next) => {
