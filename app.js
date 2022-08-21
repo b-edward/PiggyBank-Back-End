@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const user = require("./routes/user");
-const module = require("./routes/module");
+const moduleRoute = require("./routes/module");
 const bodyParser = require("body-parser");
 
 const sequelize = require("./util/database");
@@ -27,7 +27,7 @@ app.use((req, res, next) => {
 });
 
 app.use("/user", user);
-app.use("/module", module);
+app.use("/module", moduleRoute);
 
 app.get("*", (req, res) => {
   res.status(404).send({ error: "Invalid path" });
