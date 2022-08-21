@@ -24,11 +24,6 @@ const User = sequelize.define("User", {
   password: {
     type: DataTypes.STRING,
     allowNull: false,
-  },
-  coins: {
-    type: DataTypes.INTEGER,
-    allowNull: false,
-    defaultValue: 0
   }
 });
 
