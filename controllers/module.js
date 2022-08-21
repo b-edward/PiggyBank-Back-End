@@ -1,21 +1,44 @@
-//define the questiosn here
-var savingsQuestions = [
+// Define the questions for savings module
+var savingsQuestions = [   
     {
-      id: 0,
-      type: 0,
-      question: "A TFSA is a _____ Savings Account.",
+      type: 1,
+      prompt: "",
+      question: "Setting a budget is an important part of saving. This allows you to control and track your spending, while setting a realistic amount to save. Where is the best place to store your cash savings?",
       choices: [
-        "Transferable", 
-        "Tenfold", 
-        "Tax-Free", 
-        "Tax-Forced"
+        "Under the mattress", 
+        "A safe deposit box", 
+        "Chequing account", 
+        "Savings account"
       ],
-      correctAnswer: 2,
-      module: "savings"
+      correctAnswer: "Savings account"
+    }, 
+    {
+      type: 0,
+      prompt: "",
+      question: "An online savings account is a savings account that only operates online and therefore tends to offer higher interest rates than regular brick-and-mortar banks, which have higher overhead costs. Which of the following is an online financial institution?",
+      choices: [
+        "Royal Bank", 
+        "Scotiabank", 
+        "Wealthsimple", 
+        "Bank of Canada"
+      ],
+      correctAnswer: "Wealthsimple"
     },    
     {
-      id: 1,
       type: 0,
+      prompt: "",
+      question: "An online savings account is a savings account that only operates online and therefore tends to offer higher interest rates than regular brick-and-mortar banks, which have higher overhead costs. Which of the following is an online financial institution?",
+      choices: [
+        "Royal Bank", 
+        "Scotiabank", 
+        "Wealthsimple", 
+        "Bank of Canada"
+      ],
+      correctAnswer: "Wealthsimple"
+    },
+    {
+      type: 0,
+      prompt: "",
       question: "Saving money in an RRSP will help you after you _____.",
       choices: [
         "retire", 
@@ -23,89 +46,38 @@ var savingsQuestions = [
         "lose your job", 
         "get married"
       ],
-      correctAnswer: 0,
-      module: "savings"
+      correctAnswer: 0
     },    
     {
-      id: 2,
-      type: 1,
-      question: "Which product provides the safest way to save money for the future?",
-      choices: [
-        "Mutual Funds", 
-        "Bitcoin", 
-        "Stocks", 
-        "GICs"
-      ],
-      correctAnswer: "GICs",
-      module: "savings"
-    },    
-    {
-      id: 3,
-      type: 1,
-      question: "What is an Emergency Fund??",
-      choices: [
-        "credit cards", 
-        "easily-accessed source of funds", 
-        "a loan from Mom and Dad", 
-        "cash under the mattress"
-      ],
-      correctAnswer: "easily-accessed source of funds",
-      module: "savings"
-    },    
-    {
-      id: 4,
       type: 0,
-      question: "?",
+      prompt: "",
+      question: "A TFSA is a _____ Savings Account.",
       choices: [
-        "Mutual Funds", 
-        "Bitcoin", 
-        "Stocks", 
-        "GICs"
+        "Transferable", 
+        "Tenfold", 
+        "Tax-Free", 
+        "Tax-Forced"
       ],
-      correctAnswer: "GICs",
-      module: "savings"
-    },    
-    {
-      id: 5,
-      type: 1,
-      question: "?",
-      choices: [
-        "Mutual Funds", 
-        "Bitcoin", 
-        "Stocks", 
-        "GICs"
-      ],
-      correctAnswer: "GICs",
-      module: "savings"
-    },    
-    {
-      id: 6,
-      type: 1,
-      question: "?",
-      choices: [
-        "Mutual Funds", 
-        "Bitcoin", 
-        "Stocks", 
-        "GICs"
-      ],
-      correctAnswer: "GICs",
-      module: "savings"
-    },    
-    {
-      id: 7,
-      type: 0,
-      question: "?",
-      choices: [
-        "Mutual Funds", 
-        "Bitcoin", 
-        "Stocks", 
-        "GICs"
-      ],
-      correctAnswer: "GICs",
-      module: "savings"
+      correctAnswer: 2
     }
 ]
 
+// Define the questions for investing module
+var savingsQuestions = [  
+  {
+    id: 0,
+    type: 1,
+    question: "A good rule of thumb is to save at least 20% of your income each month for emergencies, life events, and retirement. If you start out saving only $50 from your paycheck each month, how much would you have saved after 2 years?",
+    choices: [
+      "$300", 
+      "$400", 
+      "$1000", 
+      "$1200"
+    ],
+    correctAnswer: "$1200",
+    module: "savings"
+  }    
+]
 
 exports.getQuestions = async (req, res, next) => {
  const module = req.params.module;
