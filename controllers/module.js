@@ -63,7 +63,7 @@ var savingsQuestions = [
 ]
 
 // Define the questions for investing module
-var savingsQuestions = [  
+var investmentQuestions = [  
   {
     id: 0,
     type: 1,
