@@ -20,6 +20,7 @@ sequelize
   });
 
 app.use(cors());
+app.options('*', cors());
 app.use(bodyParser.json());
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
