@@ -1,3 +1,9 @@
+# Devpost
+https://devpost.com/software/financial-literacy-1t29v3
+
+# Frontend Project
+https://github.com/Jaskaran-Dhillon/PiggyBank-Front-End
+
 # Initialization for development
 Steps:\
 1.) Clone the repository\
